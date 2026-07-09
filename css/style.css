@@ -1,1 +1,199 @@
-body{margin:0;font-family:Yu Gothic,sans-serif}header{background:#006bb3;color:#fff;padding:20px}.hero{height:300px;background:linear-gradient(#006bb3,#1fa15b);display:flex;align-items:center;justify-content:center;color:#fff}
+/* ===========================
+   百鳥市公式ホームページ Ver.1.0
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Yu Gothic","Meiryo",sans-serif;
+    background:#f4f8fb;
+    color:#333;
+    line-height:1.7;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ===== ヘッダー ===== */
+
+header{
+    background:linear-gradient(90deg,#006bb3,#1f9f5c);
+    color:white;
+    padding:20px 0;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+header h1{
+    font-size:34px;
+}
+
+header p{
+    margin-top:5px;
+    opacity:.9;
+}
+
+nav{
+    margin-top:20px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffe082;
+}
+
+/* ===== メイン画像 ===== */
+
+.hero{
+    height:420px;
+    background:linear-gradient(rgba(0,90,150,.45),rgba(30,140,80,.45)),
+               linear-gradient(135deg,#1d78c8,#35a96d);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h2{
+    font-size:52px;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:20px;
+}
+
+/* ===== 見出し ===== */
+
+section{
+    margin:60px 0;
+}
+
+section h2{
+    color:#006bb3;
+    margin-bottom:20px;
+    border-left:8px solid #1f9f5c;
+    padding-left:12px;
+}
+
+/* ===== お知らせ ===== */
+
+.card{
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    margin-bottom:18px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    transition:.25s;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+}
+
+.card h3{
+    color:#006bb3;
+    margin-bottom:10px;
+}
+
+/* ===== カードメニュー ===== */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.menu-card{
+    background:white;
+    border-radius:14px;
+    text-decoration:none;
+    color:#333;
+    padding:30px;
+    box-shadow:0 5px 12px rgba(0,0,0,.1);
+    transition:.25s;
+}
+
+.menu-card:hover{
+    transform:translateY(-6px);
+    background:#e8f7ef;
+}
+
+.menu-card h3{
+    color:#006bb3;
+    margin-bottom:10px;
+}
+
+/* ===== 百鳥市紹介 ===== */
+
+.about{
+    background:white;
+    border-radius:14px;
+    padding:30px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+/* ===== フッター ===== */
+
+footer{
+    margin-top:70px;
+    background:#004f87;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+footer h3{
+    margin-bottom:15px;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+/* ===== スマホ ===== */
+
+@media(max-width:768px){
+
+header h1{
+    font-size:26px;
+}
+
+.hero{
+    height:300px;
+}
+
+.hero h2{
+    font-size:34px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+nav ul{
+    flex-direction:column;
+    gap:10px;
+}
+
+}
